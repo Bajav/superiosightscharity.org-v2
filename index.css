@@ -54,12 +54,27 @@ header
 {
     padding: 10px;
 }
+.nav-items .contact
+{
+    color: var(--textColor);
+    font-family: var(--normalTextFont);
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
 .nav-links a
 {
     font-family: var(--normalTextFont);
     color: var(--textColor);
     text-transform: capitalize;
     font-size: 12px;
+}
+.nav-items h4
+{
+    background: var(--orangeColor);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #343434;
 }
 .home
 {
