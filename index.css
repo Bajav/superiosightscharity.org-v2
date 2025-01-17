@@ -6,6 +6,8 @@
     --headerFont:"Poltawski Nowy", serif;
     --orangeColor:#FF9C73;
     --normalTextFont:"Poppins", serif;
+    --pageBG :#FFFFFF;
+    --orangeText:#DE7E00;
 }
 body
 {
@@ -120,4 +122,48 @@ header
     line-height: 23px;
     max-width: 57%;
     margin-top: 1.5%;
+}
+.impact
+{
+    height: 60vh;
+    /* background: red; */
+    background-color: var(--pageBG);
+    font-family: var(--normalTextFont);
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px;
+    padding: 2%;
+}
+.image
+{
+    width: 50%;
+    height: 55vh;
+    background: url(./images/sideImg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #343434;
+}
+.impactText
+{
+    max-width: 70%;
+}
+.impactText span
+{
+    color: var(--orangeText);
+}
+.impactText h1
+{
+    font-size: 50px;
+    font-weight: 400;
+   /* max-width: 90%; */
+}
+.impactText p
+{
+    font-size: 15px;
 }
