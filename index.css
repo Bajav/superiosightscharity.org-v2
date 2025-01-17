@@ -291,3 +291,34 @@ header
     font-size: 15px;
     font-weight: 400;
 }
+/* vission */
+.Vision
+{
+    border-radius: 5px;
+    background: url(./images/vissionBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: var(--normalTextFont);
+    color: var(--textColor);
+    padding: 5%;
+    background-blend-mode: overlay;
+    background-color: #ffffffc0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Vision h1
+{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Vision p
+{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
