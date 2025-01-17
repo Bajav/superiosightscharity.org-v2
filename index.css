@@ -170,13 +170,14 @@ header
 /* about us */
 .about
 {
-    height: 100vh;
+    /* height: 100vh; */
     background: var(--pageBG);
     font-family: var(--normalTextFont);
     color: var(--textColor);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3%;
 }
 .aboutContainer
 {
@@ -257,4 +258,36 @@ header
     font-weight: 400;
     font-size: 13px;
     text-transform: capitalize;
+}
+/* about us */
+.mission
+{
+    background: var(--pageBG);
+    padding: 1%;
+}
+.missionContainer
+{
+    border-radius: 5px;
+    background: url(./images/missionBG.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: var(--normalTextFont);
+    color: var(--pageBG);
+    padding: 5%;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: #343434;
+}
+.missionContainer h1
+{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.missionContainer p
+{
+    font-size: 15px;
+    font-weight: 400;
 }
