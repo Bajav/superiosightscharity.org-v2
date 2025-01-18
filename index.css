@@ -505,3 +505,95 @@ header
     /* line-height: 14px; */
   }
   
+/* testMonies */
+
+.testmonies
+{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    font-family: var(--normalTextFont);
+    color: var(--textColor);
+    gap: 5%;
+    background: var(--accpageBG);
+    
+}
+.testmoniesText
+{
+    max-width: 45%;
+}
+.testmoniesText h1
+{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 20px; 
+    /* max-width: 70%;   */
+}
+.testmonies p
+{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.cardTestmonies
+{
+    padding: 10px;
+    height: 55vh;
+    width: 50%;
+}
+.cardTestmonies .swiper
+{
+    width: 100%;
+}
+.cardTestmonies .swiper-slide {
+    font-family: var(--normalTextFont);
+    color: var(--textColor);
+  }
+  .cardTestmonies .swiper-slide  h2
+  {
+    font-size: 20px;
+  }
+  .cardTestmonies .swiper-slide  p
+  {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .cardTestmonies .swiper-slide  h4
+  {
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+ .cardTestmonies .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .nameTag
+  {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .nameTag h5
+  {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  .nameTagImg
+  {
+    background: url(./images/missionPageBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px; 
+    border-radius: 30px;
+
+  }
