@@ -8,6 +8,7 @@
     --normalTextFont:"Poppins", serif;
     --pageBG :#FFFFFF;
     --orangeText:#DE7E00;
+    --accpageBG:#F1ECE6;
 }
 body
 {
@@ -345,6 +346,7 @@ header
     color: var(--textColor);
     text-align: center;
     padding: 2%;
+    /* display: none; */
 }
 .goals h1
 {
@@ -420,3 +422,86 @@ header
   font-weight: 300;
   margin-top: 30px;
  }
+ /* achievements */
+ .accomplishments
+ {
+    background: var(--accpageBG);
+ }
+.accomplishmentsText
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 5%;
+    font-family: var(--normalTextFont);
+    color: var(--textColor);
+    padding-top: 3%;
+}
+.accomplishmentsText p
+{
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 70%;
+}
+.accomplishmentsImg
+{
+    width: 50%;
+    height: 45vh;
+    background: url(./images/two.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    border: 1px solid #343434;
+}
+ /* cards */
+ .cards-flex {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* width: 100%; */
+    gap: 20px;
+    width: 95%;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    margin-top: 10px;
+    /* width: 100%; */
+    padding: 10px;
+  }
+  .card {
+    background: var(--pageBG);
+    height: 300px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #343434;
+    border-radius: 10px;
+  }
+  .card-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+  }
+  .card-image img
+  {
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .card p {
+    font-size: clamp(30%, 60%, 60%);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: var(--normalTextFont);
+    /* line-height: 14px; */
+  }
+  
