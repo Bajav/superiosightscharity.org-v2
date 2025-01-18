@@ -646,3 +646,23 @@ header
     object-fit: cover;
 
   }
+
+  /* FAQS PAGE */
+
+  .faqs
+  {
+    padding: 40px;
+    background: var(--accpageBG);
+  }
+  .faqsSideOne
+  {
+    font-family: var(--normalTextFont);
+    color: var(--textColor);
+  }
+  .faqsSideOne h1
+  {
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
