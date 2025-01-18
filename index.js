@@ -15,6 +15,23 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false,
     }
   });
+  var mySwiperGallery = new Swiper(".mySwiperGallery", {
+    // spaceBetween: 0,
+    // slidesPerView: 1,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   const swiped = document.querySelectorAll(".swiper-slide");
   const start = document.getElementsByClassName("start");
   swiped.forEach(card => {
