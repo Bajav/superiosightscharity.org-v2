@@ -16,12 +16,11 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
   var mySwiperGallery = new Swiper(".mySwiperGallery", {
-    // spaceBetween: 0,
-    // slidesPerView: 1,
+    spaceBetween: 0,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
+      delay: 3000,
+      disableOnInteraction: false,
     },
     pagination: {
       el: ".swiper-pagination",
@@ -42,3 +41,21 @@ var swiper = new Swiper(".mySwiper", {
       console.log("Card swiped");
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const togglers = document.querySelectorAll('[data-toggle]');
+    
+      togglers.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+           const selector = e.currentTarget.dataset.toggle
+           const block = document.querySelector(`${selector}`);
+          if (e.currentTarget.classList.contains('active')) {
+            block.style.maxHeight = '';
+          } else {
+            block.style.maxHeight = block.scrollHeight + 'px';
+          }
+            
+           e.currentTarget.classList.toggle('active')
+        })
+      });
+    });

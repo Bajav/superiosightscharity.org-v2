@@ -653,6 +653,10 @@ header
   {
     padding: 40px;
     background: var(--accpageBG);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-evenly;
   }
   .faqsSideOne
   {
@@ -664,5 +668,92 @@ header
     font-size: 50px;
     text-transform: capitalize;
     font-weight: 500;
-    margin-bottom: 30px;
   }
+  .faqsSideOne h5
+  {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .faqsSideOne h4
+  {
+      background: var(--orangeColor);
+      padding: 10px 15px;
+      border-radius: 20px;
+      border: 1px solid #343434;
+      width: fit-content;
+      margin-top: 49px;
+  }
+  .faqsSideOne a
+  {
+    color: var(--textColor);
+    font-family: var(--normalTextFont);
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  .faqsSideTwo
+  {
+    width: 70%;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--normalTextFont);
+    color: var(--textColor);
+    width: 90%;
+    position: relative;
+    z-index: 3;
+  }
+  .accordion__item {
+    border: 1px solid #e5f3fa;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .accordion__header {
+  padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+  }
+  .accordion__header h3
+  {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .accordion__header::after {
+    content: '';
+    background: url(https://www.svgrepo.com/show/357035/angle-down.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    transition: .4s;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+  }
+  
+  .accordion__header.active {
+    background: #e5f3fa;
+  }
+  
+  .accordion__header.active::after {
+    transform: rotateX(180deg);
+  }
+  
+  .accordion__item .accordion__content {
+    padding: 0 25px;
+    max-height: 0;
+    transition: .5s;
+    overflow: hidden;
+  }
+  .accordion__content p
+  {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-top: 3px;
+  }
+  
