@@ -32,6 +32,7 @@ li
     gap: 5%;
     align-items: center;
     z-index: 3;
+    transform: translateY(-120%);
 }
 .nav-links
 {
@@ -51,7 +52,8 @@ h1,h2 ,h3, h4 ,h5 ,h6{
 }
 .logo img
 {
-    width: 50px;
+  width: 75px;
+  height: 80px;
 }
 header
 {
@@ -115,6 +117,8 @@ header
     max-width: 60%;
     line-height: 45px;
     font-weight: 300;
+    opacity: 0;
+    transform: translateX(-100%);
 }
 .centerText p
 {
@@ -123,6 +127,8 @@ header
     line-height: 23px;
     max-width: 57%;
     margin-top: 1.5%;
+    opacity: 0;
+    transform: translateY(-100%);
 }
 .impact
 {
@@ -136,6 +142,8 @@ header
     justify-content: space-between;
     gap:50px;
     padding: 2%;
+    transform: scale(0.1);
+    opacity: 0;
 }
 .image
 {
@@ -756,4 +764,55 @@ header
     line-height: 15px;
     margin-top: 3px;
   }
-  
+
+  /* contacts us*/
+  .contactPage
+  {
+    background: var(--pageBG);
+    padding: 10px;
+  }
+  .mainContainer
+  {
+    background: var(--orangeText);
+    padding: 3%;
+    border-radius: 5px;
+  }
+  .contactContainer
+  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+  }
+  .contacts h1
+  {
+    font-family: var(--normalTextFont);
+    color: var(--accpageBG);
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .contacts a
+  {
+    color: var(--accpageBG);
+    font-family: var(--normalTextFont);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: start;
+  }
+  .contacts ul
+  {
+    margin: 0;
+    padding: 0;
+  }
+  #rights
+  {
+    text-align: center;
+    font-family: var(--normalTextFont);
+    color: var(--accpageBG);
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+  }

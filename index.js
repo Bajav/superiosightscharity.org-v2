@@ -59,3 +59,23 @@ var swiper = new Swiper(".mySwiper", {
         })
       });
     });
+
+    // gsapp
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".centerText h1", { opacity: 1,x:0, duration: 2 });
+    gsap.to(".centerText p", { opacity: 1,y:0, duration: 3 });
+    gsap.to(".nav-items ", { y:0, duration: 1 });
+    gsap.to(".impact", {
+      scrollTrigger: {
+        trigger: ".home",
+        start: "bottom 40%",
+        end: "bottom 100%",
+        toggleActions: "play none reverse none",
+        markers: true
+      },
+      scale: 1,
+      opacity: 1,
+      duration: 1.5,
+      ease: "power1.inOut",
+    });
