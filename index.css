@@ -69,6 +69,21 @@ header
     text-transform: capitalize;
     font-weight: 400;
 }
+#burger
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+  display: none;
+}
+#burger div
+{
+  width: 25px;
+  height: 3px;
+  background: var(--orangeText);
+}
 .nav-links a
 {
     font-family: var(--normalTextFont);
@@ -820,6 +835,33 @@ header
   }
 
   /* Media query for desktops */
+  @media only screen and (max-width: 1280px)  
+  {
+    .centerText
+    {
+      margin-top: 10%;
+    }
+    .centerText 
+    {
+      height: 65vh;
+    }
+  }
+  @media (max-width: 1280px) and (min-height: 551px) 
+{
+  .home {
+    height: 65vh;
+  }
+  .blend 
+  {
+    height: 65vh;
+  }
+  .image 
+  {
+    height: 35vh; 
+  }
+  .centerText {
+    height: 20vh;}
+}
 @media only screen and (max-width: 1240px)  {
   .impactText h1 
   {
@@ -851,6 +893,16 @@ header
   {
     font-size: 50px;
   }
+}
+@media only screen and  (max-width: 1114px) 
+{
+  .home {
+    height: 100vh;
+}
+.blend
+{
+  height: 100vh;
+}
 }
 @media only screen and (max-width: 1050px)  
 {
@@ -918,6 +970,47 @@ header
     max-width: 75%;
   }
 }
+@media (max-width: 884px) and (min-height: 1016px) 
+{
+  .home {
+    height: 65vh;
+  }
+  .blend 
+  {
+    height: 65vh;
+  }
+  .image 
+  {
+    height: 35vh; 
+  }
+  .imgOne {
+    height: 40vh;
+    width: 45%;
+  }
+  .aboutSideImages {
+    width: 50vw;
+  }
+  .imgMain 
+  {
+    height: 55vh;
+    width: 45%;
+  }
+  .accomplishmentsImg 
+  {
+    height: 30vh;
+  }
+  .cardTestmonies 
+  {
+    height: 30vh;
+  }
+  .mySwiperGallery 
+  {
+    height: 45vh;
+  }
+  .gallery {
+    height: 60vh;
+  }
+}
 @media only screen and (max-width: 850px)  
 {
   .cards-flex {
@@ -958,6 +1051,38 @@ header
   width: 100%;
 }
 }
+@media (max-width: 800px) and (min-height: 1000px) 
+{
+  .home {
+    height: 55vh;
+}
+.blend
+{
+  height: 55vh;
+}
+.image {
+  height: 30vh;
+}
+.imgOne {
+  height: 30vh;
+}
+.imgMain {
+  height: 35vh;
+}
+.cardTestmonies {
+  height: 25vh;
+}
+.mySwiperGallery {
+  height: 35vh;
+}
+.mySwiperGallery {
+  height: 35vh;
+}
+.gallery
+{
+  height: 45vh;
+}
+}
 @media only screen and (max-width: 780px)  
 {
   .centerText p {
@@ -976,6 +1101,13 @@ header
   font-size: 11px;
   line-height: 15px;
 }
+}
+@media (max-width: 768px) and (max-height: 935px) 
+{
+  body
+  {
+    display: none;
+  }
 }
 @media only screen and (max-width: 720px)  
 {
@@ -1023,5 +1155,38 @@ header
 .image {
   width: 100%;
   background-position: top 10% center 5%;
+}
+}
+@media only screen and (max-width: 670px)  
+{
+  .nav-links 
+  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--orangeColor);
+    display: none;
+  }
+  .nav-items h4 
+  {
+    display: none;
+  }
+#burger
+{
+  display: block;
+}
+#burger div
+{
+  margin-bottom: 5px;
+}
+.nav-items 
+{
+  padding: 2%;
+  justify-content: space-between;
+  gap: 1%;
 }
 }

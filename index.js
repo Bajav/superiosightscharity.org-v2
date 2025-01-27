@@ -79,3 +79,12 @@ var swiper = new Swiper(".mySwiper", {
       duration: 1.5,
       ease: "power1.inOut",
     });
+
+    function getDeviceDimensions() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      console.log(`the width :: ${width}, height ::: ${height}`);
+      return { width, height };
+    }
+
+    console.log(getDeviceDimensions());
