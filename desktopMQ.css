@@ -1,0 +1,19 @@
+/* Media query for desktops */
+@media only screen and (max-width: 1240px)  {
+    .impactText h1 
+    {
+        line-height: 55px;
+    }
+    .centerText
+    {
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    
+}
+
+/* Media query for laptops */
+@media  only screen and(min-width: 769px) and (max-width: 1024px) {
+    /* Your laptop-specific styles go here */
+}

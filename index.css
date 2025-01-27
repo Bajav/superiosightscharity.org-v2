@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root
@@ -10,6 +11,7 @@
     --orangeText:#DE7E00;
     --accpageBG:#F1ECE6;
 }
+
 body
 {
     padding: 0;
@@ -548,7 +550,7 @@ header
 {
     padding: 10px;
     height: 55vh;
-    width: 50%;
+    max-width: 50%;
 }
 .cardTestmonies .swiper
 {
@@ -816,3 +818,94 @@ header
     text-align: center;
     margin-top: 50px;
   }
+
+  /* Media query for desktops */
+@media only screen and (max-width: 1240px)  {
+  .impactText h1 
+  {
+      line-height: 55px;
+  }
+  .centerText
+  {
+      max-width: 100%;
+  }
+  .accomplishmentsText p 
+  {
+    line-height: 55px;
+  }
+  .testmoniesText h1 {
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 1150px)  
+{
+  .centerText p 
+  {
+    max-width: 65%;
+  }
+  .card 
+  {
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 1050px)  
+{
+  .impactText h1 
+  {
+      line-height: 50px;
+      margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1015px)  
+{
+  .testmonies 
+  {
+    flex-direction: column;
+  }
+  .testmoniesText {
+    max-width: 100%;
+}
+.cardTestmonies
+{
+  max-width: 100%;
+  margin-top: 30px;
+}
+.cardTestmonies .swiper-slide 
+{
+  width: 50%;
+}
+}
+
+@media only screen and (max-width: 950px)  
+{
+  .cards-flex
+  {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .centerText p
+  {
+    max-width: 85%;
+  }
+  .accomplishmentsText p
+  {
+    line-height: 45px;
+    max-width: 60%;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 910px)  
+{
+  .impact 
+  {
+    gap: 20px;
+  }
+  .impactText h1 
+  {
+    line-height: 45px;
+    font-size: 40px;
+  }
+  .centerText h1
+  {
+    max-width: 75%;
+  }
+}
