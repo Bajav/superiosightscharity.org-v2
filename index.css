@@ -159,8 +159,8 @@ header
     justify-content: space-between;
     gap:50px;
     padding: 2%;
-    transform: scale(0.1);
-    opacity: 0;
+    /* transform: scale(0.1); */
+    /* opacity: 0; */
 }
 .image
 {
@@ -1102,12 +1102,37 @@ header
   line-height: 15px;
 }
 }
-@media (max-width: 768px) and (max-height: 935px) 
+@media (max-width: 768px) and (min-height: 935px) 
 {
-  body
-  {
-    display: none;
-  }
+  .home {
+    height: 55vh;
+}
+.blend
+{
+  height: 55vh;
+}
+.image {
+  height: 30vh;
+}
+.imgOne {
+  height: 30vh;
+}
+.imgMain {
+  height: 35vh;
+}
+.cardTestmonies {
+  height: 25vh;
+}
+.mySwiperGallery {
+  height: 35vh;
+}
+.mySwiperGallery {
+  height: 35vh;
+}
+.gallery
+{
+  height: 45vh;
+}
 }
 @media only screen and (max-width: 720px)  
 {
