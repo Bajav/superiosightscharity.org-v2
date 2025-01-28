@@ -86,5 +86,37 @@ var swiper = new Swiper(".mySwiper", {
       console.log(`the width :: ${width}, height ::: ${height}`);
       return { width, height };
     }
-
     console.log(getDeviceDimensions());
+
+    const rights = document.getElementById("rights");
+    const date = new Date();
+    const year = date.getFullYear();
+    rights.textContent = `all rights are reserved by superior sights charity organization ${year}`; 
+
+    const burger = document.getElementById("burger");
+    const closeNav = document.getElementById("close");
+    const nav = document.querySelectorAll(".nav-links");
+    const navLi = document.getElementsByClassName("link");
+
+    burger.addEventListener("click", (e) => {
+      console.log("burger clicked");
+      for (let i = 0; i < nav.length; i++) {
+        nav[i].style.transform = "translateY(0%)";
+        document.getElementsByTagName("body")[0].style.overflow = "hidden";
+      }
+    }); 
+    for (let i = 0; i < navLi.length; i++) {
+      navLi[i].addEventListener("click", (e) => {
+        nav.forEach((navItem) => {
+          navItem.style.transform = "translateY(-120%)";
+        });
+        document.body.style.overflow = "auto"; 
+      });
+    }
+    closeNav.addEventListener("click", (e) => {
+      // console.log("clicked");
+      for (let i = 0; i < nav.length; i++) {
+        nav[i].style.transform = "translateY(-100%)";
+        document.getElementsByTagName("body")[0].style.overflow = "auto";
+      }
+    });
