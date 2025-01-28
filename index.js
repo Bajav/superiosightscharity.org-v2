@@ -72,7 +72,7 @@ var swiper = new Swiper(".mySwiper", {
         start: "bottom 40%",
         end: "bottom 100%",
         toggleActions: "play none reverse none",
-        markers: true
+        // markers: true
       },
       scale: 1,
       opacity: 1,
